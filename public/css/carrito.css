@@ -1,0 +1,109 @@
+/* Estilos generales */
+body.bg-dark {
+    color: #fff;
+}
+
+.titulo {
+    color: #fff;
+    text-align: center;
+}
+
+.carritoCard {
+    background-color: #343a40;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+}
+
+.imagen-carrito {
+    width: 20%;
+    max-width: 150px;
+    max-height: 300px;
+    margin-right: 10px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    flex: 1; /* Permite que info-card ocupe el espacio disponible */
+}
+
+.tituloCard{
+    font-size: 30px;
+}
+
+.unit-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid white;
+    gap: 10px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid white;
+    flex: 0 1 auto; /* Permite que el contenedor se ajuste */
+    margin-left: 50px;
+}
+
+.units {
+    text-align: center;
+    max-width: 80px;
+}
+
+.icon-eliminar {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carritoCard {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .imagen-carrito {
+        width: 100%;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .info-card, .unit-price, .button-container {
+        flex: 1 1 100%;
+        min-width: 0;
+        margin-bottom: 10px;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+}
+
+
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 996px) {
+    .info-card {
+
+        min-width: 300px; /* Asegura una anchura mínima */
+    }
+
+    .tituloCard{
+        font-size: 20px;
+    }
+
+}
+
+
+

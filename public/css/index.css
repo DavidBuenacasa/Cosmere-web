@@ -1,0 +1,193 @@
+
+/* Titulo Principal */
+.titulo {
+  display: inline-block;
+  position: relative;
+}
+
+/* Linea En h1 */
+
+h1::after,
+h1::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background: currentColor;
+  top: 50%;
+}
+
+h1::before {
+  left: -140px;
+}
+
+h1::after {
+  right: -140px;
+}
+
+/* Linea en h2 */
+
+h2::after,
+h2::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background: currentColor;
+  top: 50%;
+}
+
+h2::before {
+  left: -140px;
+}
+
+h2::after {
+  right: -140px;
+}
+
+/* Article Bienvenido al cosmere */
+
+#main-article-text {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 400px;
+  padding: 20px;
+  border-radius: 8%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  
+}
+
+.main-text{
+  color: black;
+}
+
+#cosmere-map {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8%;
+}
+
+/* Seccion POST */
+
+.post {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 0;
+  overflow: hidden; 
+  max-width: 600px;
+}
+
+/* Animacion Post */
+
+.post:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); 
+}
+
+.post:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjust the height as needed */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+  transition: height 0.2s ease;
+}
+
+#song-container {
+  position: relative;
+}
+
+#song-container img {
+  width: 100%;
+  height: auto;
+}
+
+#song-container audio {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Contenido relacionado*/
+
+#related-content {
+  display: flex;
+  align-items: center;
+}
+
+.media {
+  width: 100%;
+  height: 240px;
+}
+
+/* Contenedor cancion*/
+
+#song-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Titulo Post*/
+.titulo-post {
+  position: absolute;
+  bottom: 10px;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  text-align: center;
+  display: block; /* Ensure it is always displayed */
+}
+
+/* Seccion Newsletter */
+
+.btn-newsletter {
+  background-color: #ff5722; /* Color llamativo */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  padding: 15px 30px; /* Relleno del botón */
+  border-radius: 50px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Efecto de transición */
+}
+.btn-newsletter:hover {
+  background-color: #e64a19; /* Color al pasar el ratón */
+}
+
+#email-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+/* Media query para pantallas con un ancho máximo de 990 píxeles */
+@media (max-width: 768px) {
+  
+  
+  
+  #related-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+

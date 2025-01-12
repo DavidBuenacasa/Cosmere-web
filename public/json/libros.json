@@ -1,0 +1,126 @@
+{
+  "cosmere": [
+    {
+      "nombre": "Primera Era Mistborn",
+      "libros": [
+        {
+          "titulo": "El Imperio Final",
+          "precio": "24.99",
+          "imagen": "/img/portadas/mistborn/mistborn1.webp"
+        },
+        {
+          "titulo": "El Pozo de la Ascensión",
+          "precio": "24.99",
+          "imagen": "/img/portadas/mistborn/pozo.webp"
+        },
+        {
+          "titulo": "El Héroe de las Eras",
+          "precio": "24.99",
+          "imagen": "/img/portadas/mistborn/heroe.webp"
+        }
+      ]
+    },
+    {
+      "nombre": "Segunda Era Mistborn",
+      "libros": [
+        {
+          "titulo": "Aleación de Ley",
+          "precio": "24.99",
+          "imagen": "/img/portadas/mistborn/aleacion.webp"
+        },
+        {
+          "titulo": "Sombras de Identidad",
+          "precio": "24.99",
+          "imagen": "/img/portadas/mistborn/sombras.webp"
+        },
+        {
+          "titulo": "Brazales de Duelo",
+          "precio": "24.99",
+          "imagen": "/img/portadas/mistborn/brazales.webp"
+        },
+        {
+          "titulo": "El Metal Perdido",
+          "lanzamiento": 2022,
+          "precio": "24.99",
+          "imagen": "/img/portadas/mistborn/lost_metal.webp"
+        }
+      ]
+    },
+    {
+      "nombre": "El Archivo de las tormentas",
+      "libros": [
+        {
+          "titulo": "El Camino de los Reyes",
+          "precio": "34.99",
+          "imagen": "/img/portadas/stormlight/twok.webp"
+        },
+        {
+          "titulo": "Palabras Radiantes",
+          "precio": "34.99",
+          "imagen": "/img/portadas/stormlight/wor.webp"
+        },
+        {
+          "titulo": "Juramentada",
+          "precio": "34.99",
+          "imagen": "/img/portadas/stormlight/oathbringer.webp"
+        },
+        {
+          "titulo": "El Ritmo de la Guerra",
+          "precio": "34.99",
+          "imagen": "/img/portadas/stormlight/row.webp"
+        },
+        {
+          "titulo": "Viento y Verdad",
+          "precio": "34.99",
+          "imagen": "/img/portadas/stormlight/viento.webp"
+        }
+      ]
+    },
+    {
+      "nombre": "Proyectos Secretos",
+      "libros": [
+        {
+          "titulo": "Trenza Del Mar Esmeralda",
+          "precio": "24.99",
+          "imagen": "/img/portadas/secretos/trenza.webp"
+        },
+        {
+          "titulo": "Yumi y el Pintor De Pesadillas",
+          "precio": "24.99",
+          "imagen": "/img/portadas/secretos/yumi.webp"
+        },
+
+        {
+          "titulo": "El Hombre Iluminado",
+          "precio": "24.99",
+          "imagen": "/img/portadas/secretos/sunlit_man.webp"
+        }
+      ]
+    },
+    {
+      "nombre": "Otros",
+      "libros": [
+        {
+          "titulo": "El aliento de los dioses",
+          "precio": "24.99",
+          "imagen": "/img/portadas/warbreaker.webp"
+        },
+        {
+          "titulo": "Arena Blanca",
+          "precio": "24.99",
+          "imagen": "/img/portadas/arena.webp"
+        },
+        {
+          "titulo": "Arcanum Ilimitado",
+          "precio": "24.99",
+          "imagen": "/img/portadas/arcanum.webp"
+        },
+        {
+          "titulo": "Esquirla del Amanecer",
+          "precio": "24.99",
+          "imagen": "/img/portadas/stormlight/esquirla.webp"
+        }
+      ]
+    }
+  ]
+}

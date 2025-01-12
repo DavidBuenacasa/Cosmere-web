@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/general.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/favicon.svg" type="image/x-icon" />
+
+  <!-- Email JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Custom JS -->
+  <script src="/js/script.js"></script>
+</head>
+
+<body class="bg-dark">
+
+  <div id="navbar"></div>
+
+  <!-- Main -->
+
+  <main class="container">
+    <!-- Header -->
+    <section class="row">
+      <div class="col-12">
+        <h1 class="text-center mt-5 titulo">Bienvenido a Cosmere</h1>
+      </div>
+
+      <article class="row mt-1 align-items-center justify-content-center">
+        <div class="col-6 align-self-center" id="main-article-text">
+          <p class="text-center main-text">
+            El Cosmere es un universo literario creado por el autor Brandon
+            Sanderson. Aunque sus historias se desarrollan en diferentes
+            mundos, todos estos mundos están conectados dentro de la misma
+            galaxia o cúmulo estelar1. La magia y las leyes físicas del
+            Cosmere son consistentes en todos los libros, lo que permite que
+            haya conexiones y referencias entre las diferentes historias.
+          </p>
+
+          <p class="main-text">Algunas de las series más conocidas del Cosmere
+            son:</p>
+
+          <ul>
+            <li class="main-text">El archivo de las tormentas</li>
+            <li class="main-text">Nacidos de la Bruma</li>
+            <li class="main-text">Elantris</li>
+          </ul>
+        </div>
+
+        <img src="./img/cosmere-map.jpg" alt="Cosmere" class="img-fluid" id="cosmere-map" />
+      </article>
+    </section>
+
+    <!-- Section Post -->
+
+    <section class="row mt-5">
+      <div class="col-12">
+        <h2 class="text-center titulo">Posts</h2>
+      </div>
+
+      <div class="container mt-3">
+        <div class="row">
+
+          <article class="col-md-6 col-12 mb-3">
+            <a href="/html/post/post1.html">
+              <div class="card bg-body text-dark post">
+                <img src="./img/stormlight5.JPG" class="card-img-top" alt="El archivo de las tormentas" />
+                <h4 class="titulo-post">Viento y Verdad Ya disponible</h4>
+              </div>
+            </a>
+          </article>
+
+          <article class="col-md-6 col-12 mb-3">
+            <a href="/html/post/post2.html">
+              <div class="card bg-body text-dark post">
+                <img src="./img/orden-lectura.jpg" class="card-img-top" alt="El archivo de las tormentas" />
+                <h4 class="titulo-post">Cronologia Cosmere</h4>
+              </div>
+            </a>
+
+          </article>
+        </div>
+      </div>
+
+      </div>
+      <div class="mt-4">
+        <a href="/html/post.html" class="btn btn-primary btn-lg">Mas post</a>
+      </div>
+    </section>
+
+    <aside class="mt-4" id="aside-content">
+      <div class="container">
+        <h5 class="mb-3 text-center">Otro contenido</h5>
+        <div>
+
+          <div class="row" id="related-content">
+            <div class="col-md-4 col-12 mb-3">
+              <h5 class="text-center">Introduccion al cosmere</h5>
+              <div>
+                <video class="img-fluid media" controls>
+                  <source src="/video/cosmere.webm" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 mb-3">
+              <h5 class="text-center">El Club de las tormentas</h5>
+              <div>
+                <iframe class="media" src="https://www.youtube.com/embed/k1kpJYlIVzI?si=sWRujF25RdVIoHrn"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 mb-3">
+              <h5 class="text-center">Windrunner</h5>
+              <div>
+                <div id="song-container">
+                  <img src="/img/story.jpg" alt="Windrunner" class="img-fluid media" />
+                  <audio controls>
+                    <source src="/audio/Windrunner.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- Button Newsletter -->
+
+    <form id="formulario-newsletter" class="needs-validation" novalidate>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-4">
+          <input type="email" class="form-control" placeholder="Correo Electronico" aria-label="Correo Electronico"
+            id="email" required>
+        </div>
+        <div class="col-3">
+          <button type="submit" class="btn btn-newsletter">
+            <img src="/icon/email.png" alt="Newsletter" id="email-icon" />
+            Suscribirse
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div id="footer">
+
+  </main>
+
+</body>
+
+</html>

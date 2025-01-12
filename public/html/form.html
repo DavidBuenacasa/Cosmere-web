@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario De Envio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/general.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.svg" type="image/x-icon" />
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+    <script src="/js/form.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <div id="navbar"></div>
+
+    <div class="container mt-3">
+        <h2 class="text-center">Formulario de Envío</h2>
+        <form id="formularioEnvio" class="needs-validation" novalidate>
+
+            <div class="row mt-4">
+                <h5>Informacion de Contacto</h5>
+                <div class="col">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                </div>
+                <div class="col">
+                    <label class="form-label">Primer Apellido</label>
+                    <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="Primer Apellido">
+                </div>
+                <div class="col">
+                    <label class="form-label">Segundo Apellido</label>
+                    <input type="text" class="form-control" placeholder="Segundo Apellido"
+                        aria-label="Segundo Apellido">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-4">
+                    <label for="email" class="form-label">Correo
+                        Electronico</label>
+                    <input type="email" class="form-control" placeholder="Correo Electronico"
+                        aria-label="Correo Electronico" id="email" required>
+                </div>
+
+            </div>
+
+            <div class="row mt-4">
+                <h5>Direccion de envio</h5>
+                <div class="col">
+                    <label class="form-label">Calle</label>
+                    <select class="form-select" id="calle">
+                        <option selected>Calle</option>
+                        <option value="1">Avenida</option>
+                        <option value="2">Paseo</option>
+                        <option value="3">Camino</option>
+                        <option value="4">Carretera</option>
+                        <option value="5">Sendero</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="form-label">Direccion</label>
+                    <input type="text" class="form-control" placeholder="Direccion" aria-label="Direccion" required>
+                </div>
+                <div class="col-2">
+                    <label class="form-label">Numero</label>
+                    <input type="number" class="form-control" placeholder="Numero" aria-label="Numero">
+                </div>
+                <div class="col-2">
+                    <label class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" placeholder="Codigo Postal" aria-label="Codigo Postal">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <h5>Metodo de Pago</h5>
+                <div class="mb-1">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="efectivo" required>
+                        <label class="form-check-label" for="inlineRadio1">Efectivo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="tarjeta" required>
+                        <label class="form-check-label" for="inlineRadio2">Tarjeta</label>
+                    </div>
+                </div>
+                <label>El pago se realizara a la hora de recibir el
+                    producto</label>
+
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="form-check mt-4 form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                            Acepto los terminos y Condiciones
+                        </label>
+                    </div>
+
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Acepto Recibir
+                            notificaciones
+                            acerca de nuevos productos</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-3 d-flex justify-content-center">
+                <button type="submit" class="btn btn-success">Realizar Compra</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompra" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-black" id="modalCompra">Advertencia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-black"> El siguiente formulario no procesara ninguna peticion al ser solo un
+                        ejercicio escolar. Si esta
+                        interesado en la compra de libros visite alguno de los siguientes enlaces.</p>
+
+                    <ul class="d-flex justify-content-center">
+                        <li class="text-black">
+                            <a
+                                href="https://www.amazon.es/s?k=Brandon+sanderson&i=todays-deals&srs=21350206031&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91">Amazon</a>
+
+                        </li>
+                        <li class="text-black">
+                            <a href="https://www.casadellibro.com/?query=Brandon%20Sanderson">La casa del Libro</a>
+                        </li>
+                        <li class="text-black">
+                            <a
+                                href="https://gigamesh.com/?s=brandon%20sanderson&jet_ajax_search_settings=%7B%22search_source%22%3A%22product%22%2C%22custom_fields_source%22%3A%22author%2C%20isbn%2C%20publisher%2C%20_sku%22%7D&post_type=product?s=brandon%20sanderson&jet_ajax_search_settings=%7B%22search_source%22%3A%22product%22%2C%22custom_fields_source%22%3A%22author%2C%20isbn%2C%20publisher%2C%20_sku%22%7D&post_type=product">Gigamesh</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
