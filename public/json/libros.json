@@ -5,18 +5,27 @@
       "libros": [
         {
           "titulo": "El Imperio Final",
+          "Autor": "Brandon Sanderson",
+          "lanzamiento": "2006", 
           "precio": "24.99",
-          "imagen": "/img/portadas/mistborn/mistborn1.webp"
+          "imagen": "/img/portadas/mistborn/mistborn1.webp",
+          "sinopsis": "Vin, una joven con habilidades de alomancia, se une a Kelsier para derrocar al tirano Lord Legislador."
         },
         {
           "titulo": "El Pozo de la Ascensión",
+          "Autor": "Brandon Sanderson",
+          "lanzamiento": "2007", 
           "precio": "24.99",
-          "imagen": "/img/portadas/mistborn/pozo.webp"
+          "imagen": "/img/portadas/mistborn/pozo.webp",
+          "sinopsis": "Después de la caída del Lord Legislador, Vin y sus amigos luchan por mantener la paz mientras un antiguo mal resurge."
         },
         {
           "titulo": "El Héroe de las Eras",
+          "Autor": "Brandon Sanderson",
+          "lanzamiento": "2008", 
           "precio": "24.99",
-          "imagen": "/img/portadas/mistborn/heroe.webp"
+          "imagen": "/img/portadas/mistborn/heroe.webp",
+          "sinopsis": "Con el mundo al borde de la destrucción, Vin y Elend deben unir fuerzas para enfrentar una amenaza apocalíptica."
         }
       ]
     },
@@ -25,54 +34,84 @@
       "libros": [
         {
           "titulo": "Aleación de Ley",
+          "Autor": "Brandon Sanderson",
+          "lanzamiento": "2011", 
           "precio": "24.99",
-          "imagen": "/img/portadas/mistborn/aleacion.webp"
+          "imagen": "/img/portadas/mistborn/aleacion.webp",
+          "sinopsis": "En una era de progreso y cambios, Waxillium Ladrian regresa a la ciudad para resolver un misterio relacionado con su familia y enfrentar una nueva amenaza criminal."
+
         },
         {
           "titulo": "Sombras de Identidad",
+          "Autor": "Brandon Sanderson",
+          "lanzamiento": "2015", 
           "precio": "24.99",
-          "imagen": "/img/portadas/mistborn/sombras.webp"
+          "imagen": "/img/portadas/mistborn/sombras.webp",
+          "sinopsis": "Wax y sus amigos se ven envueltos en un complot político y una serie de asesinatos que amenazan la estabilidad de la nueva era."
+
         },
         {
           "titulo": "Brazales de Duelo",
+          "Autor": "Brandon Sanderson",
+          "lanzamiento": "2016", 
           "precio": "24.99",
-          "imagen": "/img/portadas/mistborn/brazales.webp"
+          "imagen": "/img/portadas/mistborn/brazales.webp",
+          "sinopsis": "Wax y Wayne se embarcan en una aventura que los lleva a descubrir secretos antiguos y enfrentarse a un nuevo enemigo que busca el poder."
+
         },
         {
           "titulo": "El Metal Perdido",
+          "Autor": "Brandon Sanderson",
           "lanzamiento": 2022,
           "precio": "24.99",
-          "imagen": "/img/portadas/mistborn/lost_metal.webp"
+          "imagen": "/img/portadas/mistborn/lost_metal.webp",
+          "sinopsis": "En su búsqueda por la verdad, Wax y sus aliados deben confrontar peligros inminentes que podrían alterar el equilibrio del mundo."
+
         }
       ]
     },
     {
-      "nombre": "El Archivo de las tormentas",
+      "nombre": "El Archivo de las Tormentas",
       "libros": [
         {
           "titulo": "El Camino de los Reyes",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2010",
           "precio": "34.99",
-          "imagen": "/img/portadas/stormlight/twok.webp"
+          "imagen": "/img/portadas/stormlight/twok.webp",
+          "sinopsis": "En un mundo de tormentas y guerras, varios personajes se ven envueltos en un conflicto épico mientras descubren sus propios destinos."
         },
         {
           "titulo": "Palabras Radiantes",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2015",
           "precio": "34.99",
-          "imagen": "/img/portadas/stormlight/wor.webp"
+          "imagen": "/img/portadas/stormlight/wor.webp",
+          "sinopsis": "Los héroes deben enfrentarse a nuevas amenazas y descubrir el verdadero significado de ser un Radiant en medio de la guerra."
         },
         {
           "titulo": "Juramentada",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2017",
           "precio": "34.99",
-          "imagen": "/img/portadas/stormlight/oathbringer.webp"
+          "imagen": "/img/portadas/stormlight/oathbringer.webp",
+          "sinopsis": "Los protagonistas luchan por unirse y enfrentar a sus enemigos, mientras los secretos del pasado resurgen y ponen a prueba su lealtad."
         },
         {
           "titulo": "El Ritmo de la Guerra",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2020",
           "precio": "34.99",
-          "imagen": "/img/portadas/stormlight/row.webp"
+          "imagen": "/img/portadas/stormlight/row.webp",
+          "sinopsis": "Con el conflicto alcanzando nuevas alturas, los héroes deben encontrar formas de superar sus propias luchas internas y unirse contra el mal."
         },
         {
           "titulo": "Viento y Verdad",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2024",
           "precio": "34.99",
-          "imagen": "/img/portadas/stormlight/viento.webp"
+          "imagen": "/img/portadas/stormlight/viento.webp",
+          "sinopsis": "Los personajes principales enfrentan sus mayores pruebas mientras se desvelan verdades ocultas que cambiarán el curso de la guerra."
         }
       ]
     },
@@ -81,46 +120,76 @@
       "libros": [
         {
           "titulo": "Trenza Del Mar Esmeralda",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2023",
           "precio": "24.99",
-          "imagen": "/img/portadas/secretos/trenza.webp"
+          "imagen": "/img/portadas/secretos/trenza.webp",
+          "sinopsis": "Una historia mágica que sigue a un grupo de jóvenes aventureros en un mundo de mares esmeralda y secretos ocultos."
         },
         {
           "titulo": "Yumi y el Pintor De Pesadillas",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2023",
           "precio": "24.99",
-          "imagen": "/img/portadas/secretos/yumi.webp"
+          "imagen": "/img/portadas/secretos/yumi.webp",
+          "sinopsis": "Yumi debe enfrentarse a sus miedos cuando un misterioso pintor comienza a dar vida a sus pesadillas."
         },
-
         {
           "titulo": "El Hombre Iluminado",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2023",
           "precio": "24.99",
-          "imagen": "/img/portadas/secretos/sunlit_man.webp"
+          "imagen": "/img/portadas/secretos/sunlit_man.webp",
+          "sinopsis": "Una exploración de la luz y la oscuridad, donde un hombre iluminado desafía las sombras que lo rodean."
         }
       ]
     },
+    
     {
       "nombre": "Otros",
       "libros": [
         {
-          "titulo": "El aliento de los dioses",
+          "titulo": "Elantris",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2005",
           "precio": "24.99",
-          "imagen": "/img/portadas/warbreaker.webp"
+          "imagen": "/img/portadas/elantris.webp",
+          "sinopsis": "En la ciudad de Elantris, una vez llena de magia y vida, la enfermedad transforma a sus habitantes en sombras de lo que eran. Un príncipe, una princesa y un misterioso forastero deben desentrañar el misterio que rodea a esta caída."
+        },
+        {
+          "titulo": "El aliento de los dioses",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2009",
+          "precio": "24.99",
+          "imagen": "/img/portadas/warbreaker.webp",
+          "sinopsis": "En un mundo donde la magia se basa en el aliento, dos princesas deben enfrentar la manipulación política y los secretos de sus propias familias."
         },
         {
           "titulo": "Arena Blanca",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2022",
           "precio": "24.99",
-          "imagen": "/img/portadas/arena.webp"
+          "imagen": "/img/portadas/arena.webp",
+          "sinopsis": "Una historia de guerra y redención en un mundo desolado, donde los personajes luchan por encontrar su lugar en medio del caos."
         },
         {
           "titulo": "Arcanum Ilimitado",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2017",
           "precio": "24.99",
-          "imagen": "/img/portadas/arcanum.webp"
+          "imagen": "/img/portadas/arcanum.webp",
+          "sinopsis": "Una colección de relatos que explora el Cosmere, el universo interconectado de Sanderson, con historias que revelan los orígenes de varios personajes."
         },
         {
           "titulo": "Esquirla del Amanecer",
+          "autor": "Brandon Sanderson",
+          "lanzamiento": "2021",
           "precio": "24.99",
-          "imagen": "/img/portadas/stormlight/esquirla.webp"
+          "imagen": "/img/portadas/stormlight/esquirla.webp",
+          "sinopsis": "Una novela corta que se adentra en los eventos que rodean el mundo de El Archivo de las Tormentas, explorando nuevos personajes y profundizando en la mitología."
         }
       ]
     }
+    
   ]
 }

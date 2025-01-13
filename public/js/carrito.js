@@ -10,7 +10,6 @@ let carrito = getCarrito();
 
 function loadCarrito() {
   const carritoContainer = document.getElementById("elementosCarrito");
-  let total = 0;
 
   carritoContainer.innerHTML = "";
 
@@ -23,21 +22,35 @@ function loadCarrito() {
     mensajeVacio.textContent = "No hay elementos pendientes en su carrito";
     mensajeVacio.className = "text-center";
     carritoContainer.appendChild(mensajeVacio);
+
+
+
   } else {
     //Si tiene elementos iteramos sobre ellos y los mostramos
+
+    //COntenedor para las carritoCard
+    const cardContainer = document.createElement("div")
+    cardContainer.className = "cardContainer";
+
     carrito.forEach((book) => {
       const carritoCard = document.createElement("div");
       carritoCard.className = "carritoCard";
 
       carritoCard.innerHTML = `
-        <div class="h-100 d-flex flex-row tienda-card">
-            <img src="${
-              book.imagen
-            }" class="card-img-top imagen-carrito" alt="${book.titulo}">
-            <div class="info-card">
-                <h5 class="card-title tituloCard">${book.titulo}</h5>
+        <div class=" d-flex justify-content-center row">
+            <div class="col-3 image-container">
+              <img src="${
+                book.imagen
+              }" class="card-img imagen-carrito" alt="${book.titulo}">
             </div>
-            <div class="d-flex  align-items-center unit-price">
+            
+            <div class="info-card col-5">
+                <h5 class="card-title tituloCard">${book.titulo}</h5>
+                <p>Autor: ${book.autor}</p>
+                <p>Fecha de Lanzamiento: ${book.lanzamiento}</p>
+                <p class="sinopsis"> ${book.sinopsis}</p>
+            </div>
+            <div class="d-flex  align-items-center unit-price col-4">
                 <div>
                     <input type="number" value="${
                       book.unidad
@@ -45,19 +58,18 @@ function loadCarrito() {
         book.titulo
       }')" class="form-control units">
                 </div>
-                <div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
                     <p class="m-0">Precio Unitario</p>  
                     <p class="m-0">${book.precio}€</p>
                 </div>
-                <div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
                     <p class="m-0">Total</p>  
                     <p class="m-0">${parseFloat(
                       book.precio * book.unidad
                     ).toFixed(2)}€</p>
                 </div>
-                
             </div>
-            <div class="button-container">
+            <div class="button-container col-1">
                 <button type="button" class="btn btn-danger" onclick="popElement('${
                   book.titulo
                 }')">
@@ -67,9 +79,12 @@ function loadCarrito() {
 
         </div>
                   `;
-
-      carritoContainer.appendChild(carritoCard);
+        cardContainer.appendChild(carritoCard)
     });
+
+    
+
+    carritoContainer.appendChild(cardContainer)
 
     const resume = document.createElement("div");
 
@@ -97,7 +112,6 @@ function popElement(titulo) {
 
 //Si modificamos las unidades de los libros se ejecuta
 function newValue(event, titulo) {
-  console.log("prueba");
   const newUnit = parseFloat(event.target.value); // Convertir el valor del input a número
   const index = carrito.findIndex((book) => book.titulo === titulo); //Encontrar el index del libro
   carrito[index].unidad = newUnit;
@@ -114,8 +128,6 @@ function sumCarrito() {
   let total = 0;
 
   carrito.forEach((book) => {
-    console.log(book.precio);
-    console.log(parseFloat(book.precio).toFixed(2));
     total += parseFloat(book.precio) * parseInt(book.unidad, 10);
   });
 
@@ -136,12 +148,7 @@ function vaciarCarrito() {
 //Vacia el carrito
 function realizarCompra() {}
 
-function actualizarPagina() {
-  location.reload();
-}
 
 function actualizarLocalStorage() {
   localStorage.setItem("carrito", JSON.stringify(carrito)); // Actualizar localStorage
 }
-
-

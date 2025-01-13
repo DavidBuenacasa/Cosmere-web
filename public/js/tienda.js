@@ -1,10 +1,8 @@
 export const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 export function getCarrito(){
-  console.log("prueeba")
   return carrito;
 }
-
 window.onload=loadTienda
 window.addCarrito=addCarrito;
 
@@ -40,7 +38,7 @@ function loadTienda(){
                   <img src="${book.imagen}" class="card-img-top imagen-tienda" alt="${book.titulo}">
                   <div class="d-flex flex-row align-items-center p-2">
                     <p class="texto">${book.precio}€</p>
-                    <button type="button" class="btn btn-secondary button" onClick="addCarrito('${book.titulo}','${book.precio}','${book.imagen}')">Añadir Al Carrito</button>
+                    <button type="button" class="btn btn-secondary button" onClick="addCarrito('${book.titulo}','${book.lanzamiento}','${book.autor}','${book.sinopsis}','${book.precio}','${book.imagen}')">Añadir Al Carrito</button>
                   </div>
                 </div>
               `;
@@ -53,10 +51,13 @@ function loadTienda(){
 }
 
 //Añadir Libro al carrito
- function addCarrito(titulo, precio, imagen) {
+ function addCarrito(titulo,lanzamiento,autor,sinopsis,precio, imagen) {
   let libro = {
     titulo: titulo,
+    autor:autor,
+    lanzamiento:lanzamiento,
     precio: precio,
+    sinopsis:sinopsis,
     imagen: imagen,
     unidad: 1
   };
