@@ -1,0 +1,45 @@
+
+.cosmereFeed{
+    margin-bottom: 30px;
+    max-height: 600px;
+}
+.texto{
+    color: black;
+}
+
+.titulo{
+    color: black;
+    font-size: 20px;
+}
+
+.image-new{
+    height: 200px;  /* Ajusta la altura según tus necesidades */
+    object-fit: cover;  /* Mantiene la proporción de la imagen */
+}
+
+.descripcion{
+    overflow: hidden; /* O 'auto' o 'scroll' según lo que necesites */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 4;
+}
+
+.card {
+    display: flex; /* Permite al contenido de la tarjeta alinearse */
+    flex-direction: column; /* Apila el contenido verticalmente */
+    height: 100%; /* Hace que todas las tarjetas tengan la misma altura */
+    justify-content: space-between; /* Alinea el contenido dentro de la tarjeta */
+}
+
+.sandersonFeed {
+    flex: 1 1 100%; /* Cada elemento ocupa el mismo espacio base */
+    max-width: 300px; /* Ancho máximo para los elementos */
+    margin: 10px; /* Espacio entre elementos */
+}
+
+#sanderson-feed {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio */
+    justify-content: center;
+}

@@ -1,10 +1,38 @@
-const express =require('express');
+import express from 'express';
+import RSSParser from 'rss-parser';
+import dotenv from 'dotenv';
+
+const parser = new RSSParser();
 const app = express();
 const port = 3000;
 
-require('dotenv').config();
+dotenv.config();
+
+//Definicion de las 2 fuentes RSS 
+const rssFeeds =[
+    {id: 'feed1', url:'https://cosmere.es/feed/'}, //RSS
+    {id: 'feed2', url:'https://www.youtube.com/feeds/videos.xml?channel_id=UC3g-w83Cb5pEAu5UmRrge-A'}, //ATOM
+];
+
+//Feed RSS
+app.get('/api/feed/:id', async (req, res) =>{
+
+    const feedConfig =rssFeeds.find(feed => feed.id === req.params.id)
+
+    try{
+        const feed =await parser.parseURL(feedConfig.url)
+
+        //Parseamos a JSON para trabajar mas comodo con ellas
+        res.json(feed);
+    }catch (error){
+        console.error('Error al obtener el Feed RSS', error);
+        res.status(500).send('Error al Obtener el feed RSS');
+    }
+});
 
 app.use(express.static('public'))
+
+
 
 app.get('/', (req, res) =>{
     //Ruta del proyecto

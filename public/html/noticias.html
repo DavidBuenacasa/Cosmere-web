@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/general.css" />
+  <link rel="stylesheet" href="/css/noticias.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/icon/cosmere-white.svg" type="image/x-icon" />
+
+  <!-- Custom JS -->
+  <script src="/js/script.js"></script>
+  <script src="/js/feed.js"></script>
+</head>
+
+<body class="bg-dark">
+
+  <div id="navbar"></div>
+
+  <div class="container mt-4">
+    <div >
+        <h2 class="text-center">Noticias</h2>
+    </div>
+
+    <div id="cosmere-container" class="mt-4 mb-2">
+        <h3 class="text-center mb-3">Cosmere Feed</h3>
+        <div id="cosmere-feed" class="d-flex row row-cols-md-2 row-cols-lg-4 row-cols-1"></div>
+    </div>
+
+    <div id="sanderson-container" class="mt-3">
+        <h3 class="text-center">Sanderson Feed</h3>
+        <div id="sanderson-feed" class="d-flex row row-cols-md-2 row-cols-1"></div>
+    </div>  
+  </div>
+
+  <div id="footer"></div>
+</body>
+
+</html>
