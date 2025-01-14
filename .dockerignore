@@ -1,5 +1,4 @@
-#Ignora node_modules al hacer la image docker
-node_modules
+
 
 #Ignora .env
 .env
