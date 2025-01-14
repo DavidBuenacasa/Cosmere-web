@@ -38,9 +38,11 @@
                   .then(
                     function (response) {
                       console.log("SUCCESS!", response.status, response.text);
+                      showToast("Se ha suscrito correctamente");
                     },
                     function (error) {
                       console.log("FAILED...", error);
+                      showToast("Ha ocurrido un error inesperado, vuelva a intentarlo mas tarde");
                     }
                   );
               }
@@ -55,3 +57,14 @@
     
   
   })();
+
+//Toast Confirmacion
+function showToast(mensaje) {
+  var toastEl = document.getElementById("toastNewsletter");
+  var toast = new bootstrap.Toast(toastEl);
+
+  var mensajeToast = document.getElementById("mensajeToast");
+  mensaje.Toast.textContent=mensaje;
+
+  toast.show();
+}
