@@ -11,7 +11,7 @@ dotenv.config();
 //Definicion de las 2 fuentes RSS 
 const rssFeeds =[
     {id: 'feed1', url:'https://cosmere.es/feed/'}, //RSS
-    {id: 'feed2', url:'https://www.youtube.com/feeds/videos.xml?channel_id=UC3g-w83Cb5pEAu5UmRrge-A'}, //ATOM
+    {id: 'feed2', url:'https://www.youtube.com/feeds/videos.xml?channel_id=UC3g-w83Cb5pEAu5UmRrge-A'} //ATOM
 ];
 
 //Feed RSS
