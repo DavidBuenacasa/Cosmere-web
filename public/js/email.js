@@ -63,3 +63,7 @@ function showToast() {
   var toast = new bootstrap.Toast(toastEl);
   toast.show();
 }
+
+function almacenarCorreoJSON(){
+  
+}

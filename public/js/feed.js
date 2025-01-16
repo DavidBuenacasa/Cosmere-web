@@ -7,7 +7,7 @@ async function fetchCosmereFeed() {
         const feedContainer = document.getElementById("cosmere-feed");
         feedContainer.innerHTML=``;
 
-
+        //Por cada item del feed
         data.items.forEach(item =>{
             const title = item.title;
             const link = item.link;
@@ -61,6 +61,8 @@ async function fetchSandersonFeed() {
 
         const feedContainer = document.getElementById("sanderson-feed");
         feedContainer.innerHTML=``;
+
+        //Por cada item del feed
 
         data.items.forEach(item =>{
             const title = item.title;

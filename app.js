@@ -15,13 +15,16 @@ const rssFeeds =[
 ];
 
 //Feed RSS
+//Existen 2 Feeds por lo que las rutas internas del servidor donde se almacenan son 
+// /api/feed/feed1
+// //api/feed/feed2
 app.get('/api/feed/:id', async (req, res) =>{
 
+    //Se obtiene un feed en funcion del id de cada uno
     const feedConfig =rssFeeds.find(feed => feed.id === req.params.id)
-
     try{
+        //Obtenemos el feed 
         const feed =await parser.parseURL(feedConfig.url)
-
         //Parseamos a JSON para trabajar mas comodo con ellas
         res.json(feed);
     }catch (error){
