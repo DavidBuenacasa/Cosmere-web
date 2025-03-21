@@ -1,19 +1,9 @@
  //Enviar Email
-(function () {
-    "use strict";
-  
-    //Recuperamos las variables de entorno definidas anteriormente
-    fetch('/api/env')
-    .then(response => response.json())
-    .then((data) =>{
-  
+(function () {  
       //Iniciamos EmailJS con nuestra KEY
-      emailjs.init(data.keyPublic);
-  
       window.addEventListener(
         "load",
         function () {
-  
           //Recuperamos el formulario
           var form = document.getElementById("formulario-newsletter");
           form.addEventListener(
@@ -31,19 +21,20 @@
   
                 //Recuperamos el valor del input email
                 var email = document.getElementById("email").value; // Envía el correo usando EmailJS
-  
-                //Enviamos el Email al destinatario
-                emailjs
-                  .send(data.serviceKey,data.templateKey, { to_email: email })
-                  .then(
-                    function (response) {
-                      console.log("SUCCESS!", response.status, response.text);
+
+                fetch('/api/send', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({ email }),
+                }).then(response => {
+                  if (response.ok) {
                       showToast();
-                    },
-                    function (error) {
-                      console.log("FAILED...", error);
-                    }
-                  );
+                  }
+                }).catch(error => {
+                  console.error('Error sending email:', error);
+                });
               }
               form.classList.add("was-validated");
             },
@@ -52,10 +43,10 @@
         },
         false
       );
-  })
     
   
   })();
+
 
 //Toast Confirmacion
 function showToast() {
@@ -64,6 +55,3 @@ function showToast() {
   toast.show();
 }
 
-function almacenarCorreoJSON(){
-  
-}
